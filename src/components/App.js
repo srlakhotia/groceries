@@ -1,10 +1,11 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 import './App.css';
 
 const App = () => (
-    <div>
+    <Button variant="contained" color="primary">
         App here
-    </div>
+    </Button>
 );
 
 export default App;

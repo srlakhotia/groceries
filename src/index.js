@@ -4,11 +4,9 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import tasks from './reducers';
 import App from './components/App';
-import initialData from '../data';
 
 const store = createStore(
-    tasks, // reducers
-    initialData // optional, just sample tasks
+    tasks // reducers
 );
 
 render(
