@@ -9,17 +9,14 @@ module.exports = {
     module: {
         rules: [
             { 
-                test: /\.jsx?$/, 
+                test: /\.js[x]?$/, 
                 loader: 'babel-loader', 
-                exclude: /node_modules/ 
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
                 use: [ 'style-loader', 'css-loader' ]
             }
         ]
-    },
-    devServer: {
-        contentBase: './docs'
     }
 };

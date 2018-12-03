@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
@@ -6,12 +7,13 @@ import tasks from './reducers';
 import App from './components/App';
 
 const store = createStore(
-    tasks // reducers
+    tasks, // reducers
+    {}
 );
 
 render(
     <Provider store={store}>
         <App />
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('root')
 );
