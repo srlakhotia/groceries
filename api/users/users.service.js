@@ -1,4 +1,5 @@
 const UserModal = require('./users.entity');
+const bcrypt = require('bcrypt-nodejs');
 
 const addUser = (userData, done) => {
     let user = new UserModal({
@@ -16,6 +17,22 @@ const addUser = (userData, done) => {
     });
 };
 
+const loginUser = (loginData, done) => {
+    UserModal.findOne({
+        userName: loginData.userName
+    }, (err, userData) => {
+        if(!userData || !bcrypt.compareSync(loginData.password, userData.password)) {
+            done({
+                "customError": "UserName or Password do not match",
+                "fullError": err
+            });
+        } else {
+            done(null, userData);
+        }
+    });
+};
+
 module.exports = {
-    addUser
+    addUser,
+    loginUser
 }

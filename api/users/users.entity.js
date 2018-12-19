@@ -4,10 +4,12 @@ const bcrypt = require('bcrypt-nodejs');
 const schema = new mongoose.Schema({
     name: {
         type: String,
+        default: "",
         required: true
     },
     email: {
         type: String,
+        default: "",
         required: true
     },
     userName: {
@@ -22,11 +24,11 @@ const schema = new mongoose.Schema({
 
 //Hashing the password
 schema.methods.generateHash = (password) => {
-    console.log('hhhhhh')
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
-schema.methods.vaildPassword = (password) => {
+schema.methods.vaildatePassword = (password) => {
+    console.log('validating:: ', password, this.password)
     return bcrypt.compareSync(password, this.password);
 };
 
