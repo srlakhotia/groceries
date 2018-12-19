@@ -17,6 +17,7 @@
     "license": "MIT",
     "dependencies": {
         "@babel/core": "^7.1.6",
+        "bcrypt-nodejs": "0.0.3",
         "express": "^4.16.4",
         "mongoose": "^5.3.14",
         "react": "^16.3.0",
@@ -32,7 +33,7 @@
         "@material-ui/icons": "^3.0.1",
         "babel-loader": "^8.0.2",
         "babel-plugin-material-ui": "^0.3.1",
-        "body-parser": "^1.18.2",
+        "body-parser": "^1.18.3",
         "css-loader": "^0.28.4",
         "express-react-views": "^0.11.0",
         "nodemon": "^1.18.7",
