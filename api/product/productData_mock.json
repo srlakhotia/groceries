@@ -1,0 +1,55 @@
+[
+    {
+    "productCode": "001",
+    "name": "Maida - 500g",
+    "productMeta": {
+        "brand": "Generic Brand",
+        "vegCategory": "Veg"
+    },
+    "categories": [
+        "5c1b48145053500b5c4da84c"
+    ],
+    "price": 18,
+    "description": "World best maida",
+    "qty": 100
+    }, {
+        "productCode": "002",
+        "name": "Sooji - Ordinary - 500g",
+        "productMeta": {
+            "brand": "Generic Brand",
+            "vegCategory": "Veg"
+        },
+        "categories": [
+            "5c1b48145053500b5c4da84c"
+        ],
+        "price": 20,
+        "description": "World best Sooji Ordinary",
+        "qty": 100
+    }, {
+        "productCode": "003",
+        "name": "Whole Wheat Atta - 10kg",
+        "productMeta": {
+            "brand": "Generic Brand",
+            "vegCategory": "Veg"
+        },
+        "categories": [
+            "5c1b48145053500b5c4da84c"
+        ],
+        "price": 295,
+        "description": "World best Whole Wheat Atta",
+        "qty": 100
+    }, {
+        "productCode": "004",
+        "name": "Besan",
+        "productMeta": {
+            "brand": "Generic Brand",
+            "vegCategory": "Veg"
+        },
+        "categories": [
+            "5c1b48145053500b5c4da84c"
+        ],
+        "price": 18,
+        "description": "World best besan",
+        "qty": 100
+    }
+]

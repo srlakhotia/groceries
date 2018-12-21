@@ -27,9 +27,4 @@ schema.methods.generateHash = (password) => {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
-schema.methods.vaildatePassword = (password) => {
-    console.log('validating:: ', password, this.password)
-    return bcrypt.compareSync(password, this.password);
-};
-
 module.exports = mongoose.model('users', schema);

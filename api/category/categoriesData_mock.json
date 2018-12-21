@@ -1,0 +1,37 @@
+[{
+    "_id": "5c1b48145053500b5c4da84c",
+    "name": "Atta, Flours and Sooji",
+    "primaryCategory": true,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+}, {
+    "_id": "5c1b48145053500b5c4da84d",
+    "name": "Dal and Pulses",
+    "primaryCategory": true,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+},{
+    "_id": "5c1b48145053500b5c4da84e",
+    "name": "Dry Fruits",
+    "primaryCategory": true,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+},{
+    "_id": "5c1b48145053500b5c4da84f",
+    "name": "Masalas and Spices",
+    "primaryCategory": true,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+},{
+    "_id": "5c1b48145053500b5c4da850",
+    "name": "Salt, Sugar",
+    "primaryCategory": false,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+}, {
+    "_id": "5c1b48145053500b5c4da851",
+    "name": "Rice & Rice Products",
+    "primaryCategory": false,
+    "description": "Lorem Ipsum",
+    "subCategories": []
+}]
