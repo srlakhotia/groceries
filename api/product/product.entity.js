@@ -21,7 +21,8 @@ const schema = new mongoose.Schema({
         }
     },
     categories: [{
-        type: mongoose.Schema.Types.ObjectId
+        type: String
+        // type: mongoose.Schema.ObjectId
     }],
     price: {
         type: Number,

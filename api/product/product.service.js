@@ -11,6 +11,18 @@ const getProduct = (prodId, done) => {
     });
 };
 
+const getProductsList = (query, done) => {
+    ProductModal.find(query, (err, products) => {
+        if(err) {
+            console.error("No Products", err);
+            done(err);
+        } else {
+            done(null, products);
+        }
+    });
+}
+
 module.exports = {
-    getProduct
+    getProduct,
+    getProductsList
 }
