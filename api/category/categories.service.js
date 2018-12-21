@@ -11,6 +11,18 @@ const getPrimaryCategories = done => {
     });
 };
 
+const getSubCategories = (categoryIds, done) => {
+    CategoryModel.find({ _id: categoryIds}, (err, categories) => {
+        if(err) {
+            console.error("Unable to find primary categories");
+            done(err);
+        } else {
+            done(null, categories);
+        }
+    });
+};
+
 module.exports = {
-    getPrimaryCategories
+    getPrimaryCategories,
+    getSubCategories
 }

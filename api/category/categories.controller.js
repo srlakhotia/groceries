@@ -4,6 +4,11 @@ const getPrimaryCategories = done => {
     categoriesService.getPrimaryCategories(done);
 };
 
+const getSubCategories = (categoryIds, done) => {
+    categoriesService.getSubCategories(categoryIds, done);
+};
+
 module.exports = {
-    getPrimaryCategories
+    getPrimaryCategories,
+    getSubCategories
 };
