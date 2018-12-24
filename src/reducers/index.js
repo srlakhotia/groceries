@@ -1,14 +1,12 @@
-const task = (state, action) => {
+const tasks = (state = {}, action) => {
+    const newState = {...state};
     switch (action.type) {
+        case 'GET_CATEGORIES': {
+            newState.categories = action.payload;
+            return newState;
+        }
         default:
-            return state;
-    }
-};
-
-const tasks = (state = [], action) => {
-    switch (action.type) {
-        default:
-            return state;
+            return newState;
     }
 };
 

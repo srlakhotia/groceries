@@ -1,19 +1,31 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 import tasks from './reducers';
 import App from './App';
 
+const composeEnhancers = 
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+            // options like actionSanitizer, stateSanitizer
+        }) : compose;
+
+const enhancer = composeEnhancers(
+    applyMiddleware(thunk)
+);
+
 const store = createStore(
-    tasks, // reducers
-    {}
+    tasks, // reducers,
+    {},
+    enhancer
 );
 
 render(
     <Provider store={store}>
-        <App />
+        <App store={store} />
     </Provider>,
     document.getElementById('root')
 );

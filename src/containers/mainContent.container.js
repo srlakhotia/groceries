@@ -7,7 +7,7 @@ import Home from './home.container';
 function MainContent (props) {
     return (
         <Router>
-            <Route exact path="/" render={() => <Home></Home>} />
+            <Route exact path="/" render={() => <Home />} />
         </Router>
     )
 }
